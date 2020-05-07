@@ -1,23 +1,24 @@
-body {
-    margin: 0;
+* {
+    box-sizing: border-box;
 }
 
-.container{
-    /*
-    content padding border margin
-    */
+.divWrapper {
+    width: 1000px;
+    height: 400px;
+    background-color: black;
+    border: 10px solid red;
 
-    /*box-sizing: content-box;!* content only W H *!*/
-    box-sizing: border-box; /* content + padding + border */
-    width: 50%;
-    height: 300px;
-    background-color: orange;
-    color: white;
-    font-size: 40px;
-    border: 56px solid red;
+    overflow: auto;
+    /*overflow-y: auto;
+    overflow-x: hidden;*/
 
-    /*
-    don't touch this
-    */
-    display: inline-block;
+}
+
+.innerDiv {
+    width: 75%;
+    height: 50%;/* exception*/
+    padding: 25%;
+    background-color: green;
+    border: 5px solid blue;
+    margin: 10%;
 }
